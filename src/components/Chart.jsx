@@ -2,11 +2,8 @@ import React from "react";
 
 const Chart = () => {
   return (
-    <div
-      className="h-[130vh] bg-[#000618]   py-[125px]   md:px-[56px]  px-8  "
-      id="dapp"
-    >
-      <div className="flex justify-center relative  items-center  h-full px-7">
+    <div className="h-[100vh] bg-[#000618]   py-[75px] " id="dapp">
+      <div className="flex justify-center relative  items-center  h-full container mx-auto px-4">
         <div className="">
           <div
             id="dexscreener-embed"

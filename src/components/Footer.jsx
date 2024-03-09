@@ -1,117 +1,93 @@
-import React from "react";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaTelegram } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa6";
-import { FaDiscord } from "react-icons/fa6";
-import { FaMedium } from "react-icons/fa";
+import {
+  FaDiscord,
+  FaGithub,
+  FaMedium,
+  FaTelegram,
+  FaTwitter,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-[#01030B] pt-[100px] pb-6  sm:px-7 px-4 relative ">
-      <div className="px-7">
-        <div className=" flex md:flex-row flex-col justify-between gap-4  ">
-          <div>
-            <div className="md:block flex justify-center">
-              <p className="text-white text-[25px] font-semibold">SOCIALS</p>
-            </div>
-            <div className="mt-3 md:block flex flex-col justify-center items-center">
-              <a href="https://x.com/librafinancesol?s=21">
-                <div className="flex items-center gap-1 mb-2">
-                  <FaXTwitter className="text-blue-500" />
-                  <p className="text-[#5d5d5d] text-[20px]">Twitter</p>
-                </div>
-              </a>
-              <a href="https://t.me/libraprotocolsol">
-                <div className="flex items-center gap-1 mb-2">
-                  <FaTelegram className="text-blue-500" />
-                  <p className="text-[#5d5d5d] text-[20px]">Telegram</p>
-                </div>
-              </a>
-              <a href="#">
-                <div className="flex items-center gap-1 mb-2">
-                  <FaMedium className="text-blue-500" />
-                  <p className="text-[#5d5d5d] text-[20px]">Medium</p>
-                </div>
-              </a>
-              <a href="#">
-                <div className="flex items-center gap-1 mb-2">
-                  <FaGithub className="text-blue-500" />
-                  <p className="text-[#5d5d5d] text-[20px]">Github</p>
-                </div>
-              </a>
-              <a href="#">
-                <div className="flex items-center gap-1 mb-2">
-                  <FaDiscord className="text-blue-500" />
-                  <p className="text-[#5d5d5d] text-[20px]">Discord</p>
-                </div>
-              </a>
-            </div>
+    <div className=" bg-[#01030B]">
+      <footer className="container mx-auto px-4 py-4 text-slate-100">
+        <div className="grid grid-cols-2 md:grid-cols-3">
+          <div className="p-4 text-slate-200">
+            <h2 className="text-2xl my-3 text-slate-100">Socials</h2>
+            <a
+              href="https://twitter.com/librafinanceSol"
+              className="flex items-center py-2 hover:text-blue-500"
+            >
+              <FaTwitter className="text-blue-500" /> &nbsp; Twitter
+            </a>
+            <a href="" className="flex items-center py-2 hover:text-blue-500">
+              <FaDiscord className="text-blue-500" /> &nbsp; Discord
+            </a>
+            <a
+              href="https://t.me/libraprotocolsol"
+              className="flex items-center py-2 hover:text-blue-500"
+            >
+              <FaTelegram className="text-blue-500" /> &nbsp; Telegram
+            </a>
+            <a href="" className="flex items-center py-2 hover:text-blue-500">
+              <FaMedium className="text-blue-500" /> &nbsp; Medium
+            </a>
+            <a href="" className="flex items-center py-2 hover:text-blue-500">
+              <FaGithub className="text-blue-500" /> &nbsp; Github
+            </a>
           </div>
-          <div>
-            <div className="md:block flex justify-center">
-              <p className="text-white text-[25px] font-semibold ">PRODUCTS</p>
-            </div>
-            <div className="mt-3 md:block flex flex-col justify-center items-center">
-              <a href="https://libra-finance.app">
-                <div className="flex items-center gap-1 mb-2">
-                  <p className="text-[#5d5d5d] text-[20px]">
-                    Automatic Staking
-                  </p>
-                </div>
-              </a>
-              <a href="https://libra-finance.app/bank">
-                <div className="flex items-center gap-1 mb-2">
-                  <p className="text-[#5d5d5d] text-[20px]">Libra Bank</p>
-                </div>
-              </a>
-              <a href="https://libra-finance.app/stake">
-                <div className="flex items-center gap-1 mb-2">
-                  <p className="text-[#5d5d5d] text-[20px]">Staking</p>
-                </div>
-              </a>
-            </div>
+          <div className="p-4 text-slate-200">
+            <h2 className="text-2xl my-3 text-slate-100">Products</h2>
+            <a
+              href="https://www.libra-finance.app/revShare"
+              className="py-2 block hover:text-blue-500"
+            >
+              {" "}
+              Automatic-Staking
+            </a>
+            <a
+              href="https://www.libra-finance.app/bank"
+              className="py-2 block hover:text-blue-500"
+            >
+              Libra Bank
+            </a>
+            <a
+              href="https://www.libra-finance.app/stake"
+              className="py-2 block hover:text-blue-500"
+            >
+              Staking
+            </a>
           </div>
-          <div>
-            <div className="md:block flex justify-center">
-              <p className="text-white text-[25px] font-semibold">
-                QUICK LINKS
-              </p>
-            </div>
-            <div className="mt-3 md:block flex flex-col justify-center items-center">
-              <a href="#home">
-                <div className="flex items-center gap-1 mb-2">
-                  <p className="text-[#5d5d5d] text-[20px]">Home</p>
-                </div>
-              </a>
-              <a href="#about">
-                <div className="flex items-center gap-1 mb-2">
-                  <p className="text-[#5d5d5d] text-[20px]">About</p>
-                </div>
-              </a>
-              <a href="#features">
-                <div className="flex items-center gap-1 mb-2">
-                  <p className="text-[#5d5d5d] text-[20px]">Features</p>
-                </div>
-              </a>
-              <a href="">
-                <div className="flex items-center gap-1 mb-2">
-                  <p className="text-[#5d5d5d] text-[20px]">Docs</p>
-                </div>
-              </a>
-              <a href="https://libra-finance.app">
-                <div className="flex items-center gap-1 mb-2">
-                  <p className="text-[#5d5d5d] text-[20px]">Dapp</p>
-                </div>
-              </a>
-            </div>
+          <div className="p-4 text-slate-200">
+            <h2 className="text-2xl my-3 text-slate-100">Quick Links</h2>
+            <a href="" className="py-2 block hover:text-blue-500">
+              {" "}
+              Home
+            </a>
+            <a href="#about" className="py-2 block hover:text-blue-500">
+              About
+            </a>
+            <a href="#features" className="py-2 block hover:text-blue-500">
+              Features
+            </a>
+            <a
+              href="https://librafinance.gitbook.io/libra-finance"
+              className="py-2 block hover:text-blue-500"
+            >
+              Docs
+            </a>
+            <a
+              href="https://www.libra-finance.app"
+              className="py-2 block hover:text-blue-500"
+            >
+              Dapp
+            </a>
           </div>
         </div>
-        <div className="border-t mt-2 border-white">
-          <p className="text-[#5d5d5d] text-center mt-4">
-            Copyright &copy; 2024 LIBRA.FINANCE ($LIBRA). All rights reserved.
-          </p>
-        </div>
-      </div>
+        <p className="text-slate-100 text-center  border-t border-solid border-slate-600 p-5 pt-7">
+          Copyright © 2024 LIBRA.FINANCE (
+          <span className="text-blue-500">$LIBRA</span>). All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 };

@@ -6,18 +6,18 @@ import sectionImg from "../assets/bothPhones.png";
 
 const Interest = () => {
   return (
-    <div className="bg-[#000618]  pb-[100px]  sm:px-7 px-4 relative ">
-      <div className="flex justify-beteen items-center">
-        <div className="px-7">
-          <div className="md:block flex flex-col justify-center items-center">
+    <div className="bg-[#000618]  pb-[100px] relative ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 items-center container mx-auto px-4 ">
+        <div className="">
+          <div className="md:block flex flex-col justify-center">
             <div className="p-1 bg-white mb-1 flex items-start relative text-center w-[250px]">
-              <div className="bg-blue-600 absolute h-8 w-1 top-0 -left-1 "></div>
-              <h3 className="text-blue-600 font-semibold ml-1 ">
+              <div className="bg-blue-600 absolute h-8 w-1 top-0 -left-1 py-1"></div>
+              <h3 className="text-blue-600 font-semibold px-2 ">
                 LIBRA INTEREST PROTOCOLS
               </h3>
             </div>
             <div className="sm:mb-3 mb-5">
-              <h2 className="text-white sm:text-[30px] text-[21px] ">
+              <h2 className="text-white text-2xl md:text-4xl my-3">
                 Experience the Unprecedented: Libra Finance's Industry-Leading
                 APY!
               </h2>

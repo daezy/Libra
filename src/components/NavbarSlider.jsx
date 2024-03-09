@@ -4,62 +4,62 @@ import logo from "../assets/libra logo 1.png";
 
 const NavbarSlider = ({ clicked, setClicked }) => {
   return (
-    <div className="h-[100vh] w-[300px] bg-blue-700 fixed z-30 right-[-2px] top-0  pt-[30px]">
+    <div className="h-[100vh] w-[300px] bg-slate-950 fixed z-30 right-[-2px] top-0  pt-[30px]">
       <div className="mx-[15px]">
         <div className="flex flex-row justify-between items-center ">
           <div className="p rounded-full bg-white">
-            <img src={logo} alt="logo" width={120} height={120} />
+            <img src={logo} alt="logo" width={60} />
           </div>
           <div
-            className="p-2 border-0 rounded-full bg-[#03001417] hover:bg-white hover:text-black"
+            className="p-2 border-0 rounded-full bg-[#03001417]"
             onClick={(prev) => setClicked(!prev)}
           >
-            <FaXmark className="text-white h-10 w-10 cursor-pointer  hover:text-black " />
+            <FaXmark className="text-white h-8 w-8 cursor-pointer  " />
           </div>
         </div>
 
         <div className="mt-[40px]">
           <ul className="list-none">
-            <li className="py-[15px] border-b border-gray-200 border-1">
+            <li className="py-[15px] border-b border-gray-700 border-1">
               <a
                 href="#about"
-                className="cursor-pointer text-white hover:text-[#7d3c98]"
+                className="cursor-pointer text-white hover:text-blue-500"
               >
                 About
               </a>
             </li>
 
-            <li className="py-[15px] border-b  border-gray-200 border-1">
+            <li className="py-[15px] border-b  border-gray-700 border-1">
               <a
                 href="#features"
-                className="cursor-pointer text-white hover:text-[#7d3c98]"
+                className="cursor-pointer text-white hover:text-blue-500"
               >
                 Features
               </a>
             </li>
 
-            <li className="py-[15px] border-b border-gray-200 border-1">
+            <li className="py-[15px] border-b border-gray-700 border-1">
               <a
                 href="https://libra-finance.app"
-                className="cursor-pointer text-white hover:text-[#7d3c98]"
+                className="cursor-pointer text-white hover:text-blue-500"
               >
                 Dapp
               </a>
             </li>
-            <li className="py-[15px] border-b border-gray-200 border-1">
+            <li className="py-[15px] border-b border-gray-700 border-1">
               <a
-                href="#projects"
-                className="cursor-pointer text-white hover:text-[#7d3c98]"
+                href="https://libra-finance.app/bank"
+                className="cursor-pointer text-white hover:text-blue-500"
               >
                 Libra Bank
               </a>
             </li>
-            <li className="py-[15px] border-b border-gray-200 border-1">
+            <li className="py-[15px] border-b border-gray-700 border-1">
               <a
-                href="#projects"
-                className="cursor-pointer text-white hover:text-[#7d3c98]"
+                href="https://librafinance.gitbook.io/libra-finance"
+                className="cursor-pointer text-white hover:text-blue-500"
               >
-                Dap
+                Docs
               </a>
             </li>
           </ul>
@@ -92,12 +92,6 @@ const NavbarSlider = ({ clicked, setClicked }) => {
               <FaTwitter className="text-white text-[25px]" />
             </Link> */}
           </div>
-        </div>
-
-        <div className="absolute bottom-0 flex justify-center items-center ">
-          <p className="text-center text-[12px] py-[20px]  text-white">
-            Copyright &copy; 2024 LIBRA.FINANCE ($LIBRA). All rights reserved.
-          </p>
         </div>
       </div>
     </div>
